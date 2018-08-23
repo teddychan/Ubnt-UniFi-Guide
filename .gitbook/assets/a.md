@@ -1,22 +1,22 @@
-# Install ubnt controller in Ubuntu 16.04 LTS
+# Install ubnt controller in Ubuntu 16.04LTS in GCP / AWS
 
 ## Follow this guide to setup the instance in GCP / AWS
 
-[https://help.ubnt.com/hc/en-us/articles/209376117-UniFi-Install-a-UniFi-Cloud-Controller-on-Amazon-Web-Services](https://help.ubnt.com/hc/en-us/articles/209376117-UniFi-Install-a-UniFi-Cloud-Controller-on-Amazon-Web-Services)
+https://help.ubnt.com/hc/en-us/articles/209376117-UniFi-Install-a-UniFi-Cloud-Controller-on-Amazon-Web-Services
 
-```text
+```
 $ give me super-powers
 ```
 
 {% hint style="info" %}
-Notice Ubuntu 16.04LTS default use Java 9 runtime. Which is NOT support by the controller in 5.8.24.
+ Notice Ubuntu 16.04LTS default use Java 9 runtime. Which is NOT support by the controller in 5.8.24.
 
 Mongodb has to be 3.4.x
 {% endhint %}
 
 SSH to the instance and follow the step to install
 
-```text
+```
 # Fix unable to resolve host error
 sudo nano -w /etc/hosts
 
@@ -49,5 +49,8 @@ sudo wget -O /etc/apt/trusted.gpg.d/unifi-repo.gpg https://dl.ubnt.com/unifi/uni
 sudo apt-get update
 
 sudo apt install unifi
+
 ```
+
+
 
